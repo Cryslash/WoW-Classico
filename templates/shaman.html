@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../lib/swiper.min.js"></script>
+	<title>Build para Xamans!</title>
+</head>
+<body>
+	<div class="card" id="shaman_card">
+		  <div class="container"> 
+            <img src="../img/classes/shaman-128.png">
+            <h1>Builds para Shamans!</h1>
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide" style="background-image:url(../img/builds/shaman-lvl.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/shaman/55010150003-5005230105003151">Leveling</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/shaman-pvp.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/shaman/55000135030215--0523031100501">PVP</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/shaman-healer-melee.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/shaman/-5120202-550350510503151">Restoration melee group</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/shaman-healer-caster.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/shaman/-5-550350512553151">Restoration caster group</a></p></div>
+               
+               <div class="swiper-slide" style="background-image:url(../img/builds/shaman-totem.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/shaman/-500520210502-55035001050014">Restoration totem utility</a></p></div>				
+            </div>            
+            </div>
+          </div> 
+		</div>
+</body>
+</html>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>

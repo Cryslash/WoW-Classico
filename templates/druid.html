@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../lib/swiper.min.js"></script>
+	<title>Druida • WoW-Clássico</title>
+</head>
+<body>
+	<div class="card" id="druid_card">
+          <div class="container"> 
+            <img src="../img/classes/druid-128.png">
+            <h1>Builds para Druidas!</h1>
+            
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide" style="background-image:url(../img/builds/druid-lvl.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/druid/014005301-5500021323202151-05">Leveling</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/druid-resto.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/druid/5140000302--505203105315051">Restoration</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/druid-tank.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/druid/014005001-5050501303022151-50002">Feral Tank</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/druid-feral-dps.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://classic.wowhead.com/talent-calc/druid/014005301-5500021323202151-05">Feral DPS</a></p></div>
+            </div>            
+            </div>          
+          </div> 
+        </div>
+</body>
+</html>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>

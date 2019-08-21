@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../lib/swiper.min.js"></script>
+	<title>Ladino • WoW-Clássico</title>
+</head>
+<body>
+	<div class="card" id="rogue_card">
+		  <div class="container"> 
+            <img src="../img/classes/rogue-128.png">
+            <h1>Builds para Ladinos!</h1>
+            <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide" style="background-image:url(../img/builds/rogue-lvl.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/rogue/305320105-3200552120050100231">Leveling</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/rogue-pvp.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/rogue/305320115001-3-500253000332121">PVP</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/rogue-pve.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/rogue/005323105-3210052020050150231">PVE</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/rogue-pve-daggers.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/rogue/00532310505105-320305002001-05">Daggers</a></p></div>		
+            </div>            
+            </div>
+          </div> 
+		</div>
+</body>
+</html>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>

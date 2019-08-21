@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+	margin:0px;
+	padding: 0;
+}
+
+html,body{
+	height:100%;
+	width: 100%;
+}
+
+section{
+	height:100%;
+	width: 100%;
+}
+
+.cover{
+	position: relative;
+	background: url("../img/wow-classic-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 0;
+	width:100%;
+	height:100vh;
+}
+
+#img-logo{
+	position: relative;
+	right: 0;
+	float: right;
+	margin-right: 35px;
+	margin-top: 35px;
+	height:auto;
+	width: 450px;	
+}
+
+.cover h1{
+	position: absolute;
+	display: inline;
+	font-size: 2.8em;
+	font-family: poppins;
+	top: 38%;	
+	left:50%;
+    transform: translate(-50%, -50%);
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	transition: .5s;	
+}
+
+.cover h2{
+	position: absolute;
+	display: inline;
+	font-size: 1.4em;
+	font-family: poppins;
+	top: 45%;
+	left:50%;
+    transform: translate(-50%, -50%);
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000000;
+	transition: .5s;	
+}
+
+#container-classes{
+    position: absolute;
+    top: 70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+#container-classes a:focus{
+	outline:none;
+}
+
+.classes{
+	position: relative;
+	display: inline-block;
+	width:128px;
+	height:128px;
+	border-radius: 65px;
+    overflow: hidden;
+	margin:15px 15px;	
+	transition: .2s;
+}
+
+#druid{background-image: url("../img/classes/druid-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;} 
+#druid:hover{transform: rotate(-45deg);}
+#hunter{background-image: url("../img/classes/hunter-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#hunter:hover{transform: rotate(-45deg);}
+#mage{background-image: url("../img/classes/mage-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#mage:hover{transform: rotate(-45deg);}
+#paladin{background-image: url("../img/classes/paladin-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#paladin:hover{transform: rotate(-45deg);}
+#priest{background-image: url("../img/classes/priest-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#priest:hover{transform: rotate(-45deg);}
+#rogue{background-image: url("../img/classes/rogue-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#rogue:hover{transform: rotate(-45deg);}
+#shaman{background-image: url("../img/classes/shaman-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#shaman:hover{transform: rotate(-45deg);}
+#warlock{background-image: url("../img/classes/warlock-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#warlock:hover{transform: rotate(-45deg);}
+#warrior{background-image: url("../img/classes/warrior-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
+#warrior:hover{transform: rotate(-45deg);}
+
+.card{
+	position: static;
+	display: block;
+	width: 100%;
+	height:100vh;
+}
+
+#druid_card{background-image: url("../img/cards/druid.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#hunter_card{background-image: url("../img/cards/hunter.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#mage_card{background-image: url("../img/cards/mage.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#paladin_card{background-image: url("../img/cards/paladin.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#priest_card{background-image: url("../img/cards/priest.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#rogue_card{background-image: url("../img/cards/rogue.jpg");background-repeat: no-repeat;background-size: cover; background-position: 100% 100%;}
+#shaman_card{background-image: url("../img/cards/shaman.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#warlock_card{background-image: url("../img/cards/warlock.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
+#warrior_card{background-image: url("../img/cards/warrior.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
+
+
+.container{
+	position:relative;
+	top:5%;
+	left:3%;	
+	max-width: 94%;
+	height:90%;
+	border-radius: 60px;
+	background:rgba(0,0,0,.6);	
+}
+
+.container img{
+	margin:25px 25px;
+	width:96px;
+	height: auto;	
+}
+.container h1{
+	position:absolute;
+	top:6%;
+	left:8%;
+	font-family: 'poppins', sans-serif;
+	font-size: 2.2em;
+	color: #fff;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+.container .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+.container .swiper-slide {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 41.5vw;
+      height: 50vh;
+    }   
+
+.container .swiper-slide p{
+	position: absolute;
+	top:-8%;
+	left:1%;
+}
+
+.container .swiper-slide .link{
+     text-decoration: none;
+     color: #fff;
+     text-shadow: 1px 1px 1px #000;
+     font-size:1.5em;
+    }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>WoW-Classic QuickBuilds V0.5</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script src="lib/swiper.min.js"></script>	
+</head>
+<body>
+	<!-- Pluginn Emmet Exemplo: ul>li*8>a[href="#"]>span -->
+	<section>
+		<div class="cover">
+		<img src="img/wow-classic-logo.png" id="img-logo">
+		    
+		<h1>Abbadon's QuickBuilds-Classic!</h1>
+		<h2>Tenha rápido acesso a mais de 30 Builds!</h2>	
+		
+		<div id="container-classes">
+           <a href="templates/druid.html" target="_blank"><div class="classes" id="druid"></div></a>
+           <a href="templates/hunter.html" target="_blank"><div class="classes" id="hunter"></div></a>
+           <a href="templates/mage.html" target="_blank"><div class="classes" id="mage"></div></a>
+           <a href="templates/paladin.html" target="_blank"><div class="classes" id="paladin"></div></a>
+           <a href="templates/priest.html" target="_blank"><div class="classes" id="priest"></div></a>
+           <a href="templates/rogue.html" target="_blank"><div class="classes" id="rogue"></div></a>
+           <a href="templates/shaman.html" target="_blank"><div class="classes" id="shaman"></div></a>
+           <a href="templates/warlock.html" target="_blank"><div class="classes" id="warlock"></div></a>
+           <a href="templates/warrior.html" target="_blank"><div class="classes" id="warrior"></div></a>
+        </div>
+
+		</div>
+	</section>
+	<!--
+	<section>
+        
+	</section>
+    -->
+</body>
+</html>
+
+<!--
+<script> //ancora	 
+	 // Select all links with hashes
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {// Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {// Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000, function() {// Callback after animation // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+</script>

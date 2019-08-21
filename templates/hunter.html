@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <script src="../lib/swiper.min.js"></script>
+  <title>Hunter • WoW-Clássico</title>
+</head>
+<body>
+  <div class="card" id="hunter_card">
+          <div class="container"> 
+            <img src="../img/classes/hunter-128.png">
+            <h1>Builds para Caçadores!</h1>
+
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide" style="background-image:url(../img/builds/hunter-lvl.png)">
+                <p style="text-align: center;"><a class="link" href=
+                  "https://pt.classic.wowhead.com/talent-calc/hunter/5000322150511051-150510305">Leveling</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/hunter-pvp.png)">
+                <p style="text-align: center;"><a class="link" href=
+                  "https://pt.classic.wowhead.com/talent-calc/hunter/-5105103051-005025051030315">PVP</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/hunter-pve.png)">
+                <p style="text-align: center;"><a class="link" href=
+                  "https://classic.wowhead.com/talent-calc/hunter/55000000502-05251030513051-3">PVE</a></p></div>
+            </div>            
+            </div>
+          </div> 
+    </div>
+</body>
+</html>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>

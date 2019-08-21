@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../lib/swiper.min.js"></script>
+	<title>Mago • WoW-Clássico</title>
+</head>
+<body>
+	<div class="card" id="mage_card">
+		  <div class="container"> 
+            <img src="../img/classes/mage-128.png">
+            <h1>Builds para Magos!</h1>  
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide" style="background-image:url(../img/builds/mage-lvl.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/hunter/5000322150511051-150510305">Leveling</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/mage-pvp.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/mage/20500520102--05053232112051301">PVP</a></p></div>
+
+               <div class="swiper-slide" style="background-image:url(../img/builds/mage-pve.png)">
+               	<p style="text-align: center;"><a class="link" href=
+               		"https://pt.classic.wowhead.com/talent-calc/mage/2300052310231531--053500030013">PVE</a></p></div>
+            </div>            
+            </div>
+          </div> 
+		</div>	
+</body>
+</html>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
