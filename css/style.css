@@ -128,75 +128,6 @@ p span{
 #warrior{background-image: url("../img/classes/warrior-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
 #warrior:hover{transform: rotate(-45deg);}
 
-.card{
-	position: static;
-	display: block;
-	width: 100%;
-	height:100vh;
-}
-
-#druid_card{background-image: url("../img/cards/druid.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
-#hunter_card{background-image: url("../img/cards/hunter.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
-#mage_card{background-image: url("../img/cards/mage.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
-#paladin_card{background-image: url("../img/cards/paladin.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
-#priest_card{background-image: url("../img/cards/priest.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
-#rogue_card{background-image: url("../img/cards/rogue.jpg");background-repeat: no-repeat;background-size: cover; background-position: 100% 100%;}
-#shaman_card{background-image: url("../img/cards/shaman.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
-#warlock_card{background-image: url("../img/cards/warlock.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
-#warrior_card{background-image: url("../img/cards/warrior.jpg");background-repeat: no-repeat;background-size: cover; background-position: center;}
-
-
-.container{
-	position:relative;
-	top:5%;
-	left:3%;	
-	max-width: 94%;
-	height:90%;
-	border-radius: 60px;
-	background:rgba(0,0,0,.6);	
-}
-
-.container img{
-	margin:25px 25px;
-	width:96px;
-	height: auto;	
-}
-.container h1{
-	position:absolute;
-	top:6%;
-	left:8%;
-	font-family: 'poppins', sans-serif;
-	font-size: 2.2em;
-	color: #fff;
-	text-shadow: 1px 1px 1px #000000;
-}
-
-.container .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-.container .swiper-slide {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 41.5vw;
-      height: 50vh;
-    }   
-
-.container .swiper-slide p{
-	position: absolute;
-	top:-8%;
-	left:1%;
-}
-
-.container .swiper-slide .link{
-     text-decoration: none;
-     color: #fff;
-     text-shadow: 1px 1px 1px #000;
-     font-size:1.5em;
-    }
-
 @keyframes anim {
 	0%{
         opacity: 0;
@@ -265,6 +196,5 @@ p span{
     .classes{    	
 	width:80px;
 	height:80px;	    
-	margin:3px 3px; }
-	
+	margin:3px 3px; }	
 }
