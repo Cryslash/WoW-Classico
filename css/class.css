@@ -44,9 +44,11 @@ section{
 }
 
 .container img{
+	position: relative;
 	margin:25px 25px;
 	width:96px;
-	height: auto;	
+	height: auto;
+	transition: .5s;
 }
 .container h1{
 	position:absolute;
@@ -56,6 +58,7 @@ section{
 	font-size: 2.2em;
 	color: #fff;
 	text-shadow: 1px 1px 1px #000000;
+    transition: .5s;
 }
 
 .container .swiper-container {
@@ -83,3 +86,25 @@ section{
      text-shadow: 1px 1px 1px #000;
      font-size:1.5em;
     }
+
+@media only screen and (max-width:1619px){
+.container h1{	
+	left:10%;}
+}
+@media only screen and (max-width: 1169px){
+.container h1{	
+	left:20%;}
+}
+@media only screen and (max-width: 600px){
+.container h1{
+	top:16%;}
+
+.container img{
+    left:50%;
+    margin:25px 0px;
+    transform:translate(-50%, 0);}
+
+.container .swiper-container {
+    position: relative;
+    top: 10%;}    
+}	

@@ -95,10 +95,10 @@ section{
 	position: absolute;
 	display: inline;
 	top:20%;
-	left:80px;
+	left:80px;	
 	padding: 8px;
 	width:250px;
-	border-radius: 20px;	 
+	border-radius: 10px;
 	transform: rotate(45deg);	
 	animation: anim 3.2s ease-in-out;
 }
@@ -106,6 +106,7 @@ section{
 p span{
 	 font-size: 1.6em;
 	 font-weight: bolder;
+	 border-bottom: solid .5px #fff;
 }
 
 
