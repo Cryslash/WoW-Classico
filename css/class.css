@@ -108,6 +108,10 @@ section{
     margin:1em 0; 
 }
 
+.body ul .aviso{	
+	color: Red;
+}
+
 .body ul li{
 	font-family: 'poppins', sans-serif;
 	font-size: 1.2em;
