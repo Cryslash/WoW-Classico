@@ -146,16 +146,6 @@ section{
 	color: #5dade2;
 }
 
-.container img{
-    left:50%;
-    margin:25px 0px;
-    transform:translate(-50%, 0);}
-
-.container .swiper-container {
-    position: relative;
-    top: 10%;}    
-}
-
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -183,6 +173,16 @@ section{
 @media only screen and (max-width: 600px){
 .container h1{
 	top:16%;}
+
+.container img{
+    left:50%;
+    margin:25px 0px;
+    transform:translate(-50%, 0);}
+
+.container .swiper-container {
+    position: relative;
+    top: 10%;}    
+}
 
 @media only screen and (max-width:480px){
     .container img{
