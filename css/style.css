@@ -64,7 +64,7 @@ section{
     top: 50%;
     left:50%;
     transform: translate(-50%, 0);
-    transition: .5s;
+    transition: .5s;    
 }
 
 #container-classes a:focus{
@@ -198,4 +198,31 @@ p span{
 	width:80px;
 	height:80px;	    
 	margin:3px 3px; }	
+}
+
+@media only screen and (max-width:480px){
+    
+    .cover{
+    	min-height: 500px;
+    }
+
+    #img-logo{
+    margin-top: 15px;}
+
+    .cover h1{		
+	font-size: 1.1em;
+	top:30%;
+	transform: translate( -50%, 0); }
+
+    .cover h2{	    
+	font-size: .7em;
+	top: 36%;
+	transform: translate( -50%, 0); }
+
+	#container-classes{
+	width:85%;
+    top: 45%; }
+    
+    .classes {
+     	margin:0 9px; }
 }
