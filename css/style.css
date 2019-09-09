@@ -11,7 +11,7 @@ html,body{
 
 section{
 	height:100%;
-	width: 100%;
+	
 }
 
 .cover{
@@ -109,7 +109,6 @@ p span{
 	 border-bottom: solid .5px #fff;
 }
 
-
 #druid{background-image: url("../img/classes/druid-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;} 
 #druid:hover{transform: rotate(-45deg);} 
 #hunter{background-image: url("../img/classes/hunter-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
@@ -128,6 +127,124 @@ p span{
 #warlock:hover{transform: rotate(-45deg);}
 #warrior{background-image: url("../img/classes/warrior-128.png");background-repeat: no-repeat;background-size: cover; transition: .5s;}
 #warrior:hover{transform: rotate(-45deg);}
+
+#auto_adjustment{
+	background-image: url("../img/DG's/Maps/Azeroth_map2.jpg");
+	background-size: 100% 100%;
+	background-position: 50% 50%; 
+	width:100%;	
+	text-align: center;
+	/*background:#0E0E0E; */
+}
+
+.layer{
+	height:100%;
+	width: 100%;
+	background: rgba(0,0,0,.6);
+}
+
+#auto_adjustment ol{
+	padding-top: 50px;	
+    font-family: poppins, sans-serif;
+	color:white;
+}
+
+#auto_adjustment ol li{    
+	font-size:28px;
+	font-weight:800;	
+}
+
+
+.container_dg{
+	position: absolute;
+    top: 125vh;
+	left: 25%;
+	width: 95%;
+	transform: translate(-25%, 0);
+	border: solid 2px black;
+}
+
+section a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.limit{
+	position: relative;
+	display: inline-block;
+	height: 300px;
+	width: 25%;
+	overflow: hidden;
+    margin: 10px 20px 10px 10px;
+    transition: all .6s ease;    
+}
+
+.dg{
+/*	width: 450px;   */      
+    height: 300px;
+    width: 100%;
+    transition: all .6s ease;
+}
+
+.dg:hover{
+	transform: scale(1.2);
+}
+
+section h1{
+	position: absolute;
+	top: 70%;
+	left: 30%;
+	transform: translate(-50%, 0);
+    font-family: poppins, sans-serif;
+    font-size: 1.4em;
+    z-index: 1000
+}
+
+section h2{
+	position: absolute;
+	top: 85%;
+	right:30px;
+    font-family: poppins, sans-serif;
+    font-size: .9em;
+    font-weight: lighter;
+    z-index: 1001
+}
+
+.limit #Ragefire{background-image: url("../img/DG's/Ragefire_Chasm_BG.jpg");background-repeat: no-repeat;background-size: 100% 100%; transition: .5s;}
+.limit #Wailing{background-image: url("../img/DG's/Wailing_Caverns_BG.jpg");background-repeat: no-repeat;background-size: 100% 100%; transition: .5s;}
+.limit #Deadmines{background-image: url("../img/DG's/The_Deadmines_BG.jpg");background-repeat: no-repeat;background-size: 100% 100%; transition: .5s;}
+.limit #Shadowfang{background-image: url("../img/DG's/Shadowfang_Keep_BG.jpg");background-repeat: no-repeat;background-size: 100% 100%; transition: .5s;}
+.limit #Blackfathom{background-image: url("../img/DG's/Blackfathom_Deeps_BG.jpg");background-repeat: no-repeat;background-size: 100% 100%; transition: .5s;}
+.limit #Stockade{background-image: url("../img/DG's/The_Stockade_BG.jpg");background-repeat: no-repeat;background-size: 100% 100%; transition: .5s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @keyframes anim {
 	0%{
@@ -163,16 +280,25 @@ p span{
     .classes{    	
 	width:96px;
 	height:96px;	    
-	margin:10px 10px; }	
+	margin:10px 10px; }
+    
+    #auto_adjustment{
+	height: 1200px;}   
 }
 
-@media only screen and (max-width: 1169px){
+/*@media only screen and (max-width: 1169px){ */
+@media only screen and (max-width: 1450px){
 .cover h2{	    
 	font-size: 1.1em;
 	top: 50%; }
 
 #container-classes{	    
-    top: 55%; }
+    top: 55%; }    
+
+.limit{
+		height: 300px;
+		width: 45%;		
+	}
 }
 
 @media only screen and (max-width: 900px){
@@ -197,7 +323,25 @@ p span{
     .classes{    	
 	width:80px;
 	height:80px;	    
-	margin:3px 3px; }	
+	margin:3px 3px; }
+
+    #auto_adjustment{
+    background-image: none;
+    background:#0E0E0E;
+	height: 2400px;}
+
+   section h1{
+   	top:60%;
+    left:30%;}
+
+   section h2{
+   	top: 75%;}
+
+	.limit{
+		height: 350px;
+		width: 60%;		
+	}
+	
 }
 
 @media only screen and (max-width:480px){
@@ -225,4 +369,9 @@ p span{
     
     .classes {
      	margin:0 9px; }
+
+    .limit {
+    	height: 350px;
+		width: 100%;	
+    }
 }
