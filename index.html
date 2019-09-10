@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, inicial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>WoW-Classic QuickBuilds V0.5</title>
-	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <script src="lib/swiper.min.js"></script>
 </head>
 <body>
 	<!-- Pluginn Emmet Exemplo: ul>li*8>a[href="#"]>span -->
@@ -30,61 +32,144 @@
 		</div>
 	</section>	
 	<section id="auto_adjustment">          
-          <div class="layer">
-          
+          <div class="layer">                    
           <img src="img/DG's/Treasure_chest.png" alt="treasure chest">
           <ol>            
             <li>Masmorras durante o Leveling!</li>
+            <!--li><img src="img/animation_swipe_icon.gif"></li-->
           </ol>
 
-          <div class="container_dg">
+     <div class="swiper-container">           
+     <!--div class="container_dg"-->
+     <div class="swiper-wrapper">
+        <div class="swiper-slide"> 
             <a href="">
               <div class="limit">
                <h1>Ragefire Chasm</h1>
-               <h2>Informações, Quests etc...</h2>
+               <h2>(12-18) - 5 quests.</h2>
                <div class="dg" id="Ragefire"></div>
               </div></a>
 
             <a href="">
               <div class="limit">
                <h1>Wailing Caverns</h1>
-               <h2>Informações, Quests etc...</h2>
+               <h2>(16-25) - 7 quests.</h2>
                <div class="dg" id="Wailing"></div>
               </div></a>
 
             <a href="">
               <div class="limit">
                <h1>The Deadmines</h1>
-               <h2>Informações, Quests etc...</h2> 
+               <h2>(16-22) - 5 quests.</h2> 
                <div class="dg" id="Deadmines"></div>
               </div></a>
 
             <a href="">
               <div class="limit">
                <h1>Shadowfang Keeper</h1>
-               <h2>Informações, Quests etc...</h2>
+               <h2>(17-25) - 3 quests</h2>
                <div class="dg" id="Shadowfang"></div>
               </div></a>
 
             <a href="">
               <div class="limit">
                <h1>Blackfathom Deeps</h1>
-               <h2>Informações, Quests etc...</h2>
+               <h2>(20-28) - 7 quests.</h2>
                <div class="dg" id="Blackfathom"></div>
               </div></a>
 
             <a href="">
               <div class="limit">
                <h1>The Stockade</h1>
-               <h2>Informações, Quests etc...</h2>
+               <h2>(21-27) - 6 quests.</h2>
                <div class="dg" id="Stockade"></div>
+              </div></a> 
+
+              <img class="icon_swiper" src="img/animation_swipe_icon.gif">           
+         </div>         
+
+         <div class="swiper-slide">             
+            <a href="">
+              <div class="limit">
+               <h1>Gnomeregan</h1>
+               <h2>(24-32) - 11 quests.</h2>
+               <div class="dg" id="Gnomeregan"></div>
               </div></a>
-          </div>
-           </div>
+
+            <a href="">
+              <div class="limit">
+               <h1>Razorfen Kraul</h1>
+               <h2>(23-33) - 6 quests.</h2>
+               <div class="dg" id="RazorfenK"></div>
+              </div></a>
+
+            <a href="">
+              <div class="limit">
+               <h1>The Scarlet Monastery</h1>
+               <h2>(28-42) - 7 quests.</h2>
+               <div class="dg" id="Monastery"></div>
+              </div></a>           
+
+           <a href="">
+              <div class="limit">
+               <h1>Razorfen Downs</h1>
+               <h2>(33-41) - 5 quests.</h2>
+               <div class="dg" id="RazorfenD"></div>
+              </div></a>
+
+            <a href="">
+              <div class="limit">
+               <h1>Uldaman</h1>
+               <h2>(36-42) - 11 quests.</h2>
+               <div class="dg" id="Uldaman"></div>
+              </div></a>
+
+            <a href="">
+              <div class="limit">
+               <h1>Zul'Farrak</h1>
+               <h2>(42-48) - 8 quests.</h2>
+               <div class="dg" id="Zul"></div>
+              </div></a>       
+
+              <img class="icon_swiper" src="img/animation_swipe_icon.gif">    
+           </div>    
+
+        <div class="swiper-slide">
+           <a href="">
+              <div class="limit">
+               <h1>Maraudon</h1>
+               <h2>(42-51) - 8 quests.</h2>
+               <div class="dg" id="Maraudon"></div>
+              </div></a>
+
+            <a href="">
+              <div class="limit">
+               <h1>Temple of Atal'Hakkar</h1>
+               <h2>(46-53) - 7 quests.</h2>
+               <div class="dg" id="Atal"></div>
+              </div></a>   
+
+              <img class="icon_swiper" src="img/animation_swipe_icon.gif">            
+        </div>             
+           <!--/div-->
+         </div>
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>        
+       </div>
+       </div>
 	</section>
     
 </body>
 </html>
+
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 
 <!--
 <script> //ancora	 

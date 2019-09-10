@@ -132,7 +132,7 @@ p span{
 	background-image: url("../img/DG's/Maps/Azeroth_map2.jpg");
 	background-size: 100% 100%;
 	background-position: 50% 50%; 
-	width:100%;	
+	width:100%;
 	text-align: center;
 	/*background:#0E0E0E; */
 }
@@ -145,7 +145,7 @@ p span{
 
 #auto_adjustment ol{
 	position: absolute;
-	top:100vh;
+	top:103vh;
 	left:32vw;
 	list-style: none;
 	padding-top: 50px;
@@ -157,7 +157,7 @@ p span{
 #auto_adjustment img{
 	position: relative;
 	box-sizing: border-box;
-	top:2vh;
+	top:5.5vh;
 	left:-23vw;
 	transition: all .6s ease;
 }
@@ -181,9 +181,9 @@ section a{
 
 .limit{
 	position: relative;
-	display: inline-block;
+	display: inline-block !important;	
 	height: 300px;
-	width: 25%;
+	width: 25vw;
 	overflow: hidden;
     margin: 10px 20px 10px 10px;
     transition: all .6s ease;    
@@ -226,33 +226,47 @@ section h2{
 .limit #Shadowfang{background-image: url("../img/DG's/Shadowfang_Keep_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
 .limit #Blackfathom{background-image: url("../img/DG's/Blackfathom_Deeps_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
 .limit #Stockade{background-image: url("../img/DG's/The_Stockade_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Gnomeregan{background-image: url("../img/DG's/Gnomeregan_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #RazorfenK{background-image: url("../img/DG's/Razorfen_Kraul_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Monastery{background-image: url("../img/DG's/Scarlet_Monastery_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #RazorfenD{background-image: url("../img/DG's/Razorfen_Downs_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Uldaman{background-image: url("../img/DG's/Uldaman_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Zul{background-image: url("../img/DG's/Zul'Farrak_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Maraudon{background-image: url("../img/DG's/Maraudon_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
+.limit #Atal{background-image: url("../img/DG's/Temple_of_Atal'Hakkar_BG.jpg");background-repeat: no-repeat;background-size: 100% 200%; background-position: 50% 50%; transition: .5s;}
 
 
+  .swiper-container {
+  	  position:absolute;
+  	  top: 10vh;
+	  left: 0;
+	  width: 100%;      
+    /*  height: 100%; */
+    }
+  
+  .swiper-container .icon_swiper{
+     display:none;
+}   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+  .swiper-slide {
+      text-align: center;
+      font-size: 18px;      
+      /* Center slide text vertically  *
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;      
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center; 
+    }
+*/
 
 
 
@@ -307,7 +321,7 @@ section h2{
 
 .limit{
 		height: 300px;
-		width: 45%;		
+		width: 40%;		
 	}
 }
 
@@ -338,7 +352,7 @@ section h2{
     #auto_adjustment{
     background-image: none;
     background:#0E0E0E;
-	height: 2500px;}
+	height: 2400px;}
 
     #auto_adjustment img{
     	left: -40vw;
@@ -393,17 +407,33 @@ section h2{
      	margin:0 9px; }
     
     #auto_adjustment img{
-      top:8vh;
+      top:5vh;
       left: -35vw;  
       height:80px;
       width:90px;
     }
 
     #auto_adjustment ol{      
-     top: 91vh;      
+     top: 88vh;      
     }
      #auto_adjustment ol li{      
      font-size: 1.3em;  
+    }
+
+    .swiper-container .icon_swiper{
+    position: absolute;
+    display: block !important;
+    top: 95% !important;
+    left:50% !important;
+    transform: translate(-50%, 0);       
+    height: 48px !important;
+    width: 80px !important;}
+
+    .swiper-button-next{
+    	display: none;
+    }
+    .swiper-button-prev{
+    	display: none;
     }
 
     .limit {
