@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 *{
 	margin:0px;
 	padding: 0;
@@ -29,14 +30,67 @@ section{
 
 }
 
+.header{
+	position:absolute;	
+	display:block;
+	background: rgba(0,0,0,.8);
+	top:0;
+	left:0;
+	width:80vw;
+	height:15vh;	
+}
+
+.header ol{
+	position: absolute;
+	top: 0;
+	left: 16vw;
+	list-style: none;
+	padding-top: 50px;
+    font-family: poppins, sans-serif;    
+	color:white;
+	transition: all .3s ease;
+}
+
+.header ol li{    
+	font-size: 2.5em;
+	font-weight:800;
+}
+
+.header img{
+	position: absolute;
+	box-sizing: border-box;
+	top: 2vh;
+	left: 7vw;
+	transition: all .6s ease;
+}
+
+.right_side{
+	position:absolute;
+	display: block;
+	top:0;
+	right:0;
+	width:19vw;
+	height:100vh;
+}
+
+.body{
+	position:absolute;
+	background: url("../img/DG's/The_Stockade_BG.jpg") 50% 50%/100% 100% no-repeat;
+	overflow: auto;
+	top: 15vh;
+	left: 0;
+	width: 80vw;
+	height: 85vh;	
+}
+
 .quests{
 	position: relative;
 	display: inline-block;
 	background:rgba(0,0,0,.6);
 	border-radius: 25px;
-	top:40vh;
+	top:0;
 /*	left:10vw;  */
-	width: 45vw;
+	width: 60vw;
 	min-height: 100px;
 	margin: 15px 0 15px 2vw;	
 }
@@ -108,4 +162,15 @@ li .line1{
 ul li a{
 	text-decoration: none;
 	color: #ffd100;		
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(255,0,0,0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
