@@ -14,20 +14,12 @@ section{
 	width: 100%;
 }
 
-.header{
-	position:absolute;	
-	display:block;
-	background: rgba(0,0,0,.8);
-	top:0;
-	left:0;
-	width:80vw;	
-	height:141px;
-}
-
-.header ol{
+.body ol{
 	position: absolute;
 	top: 0;
-	left: 16vw;
+	
+	left:40vw;
+    transform: translate(-40%, 0);
 	list-style: none;
 	padding-top: 50px;
     font-family: poppins, sans-serif;    
@@ -35,12 +27,13 @@ section{
 	transition: all .3s ease;
 }
 
-.header ol li{    
+.body ol li{
 	font-size: 2.5em;
 	font-weight:800;
+	text-shadow: 1px 1px 1px #000;
 }
 
-.header img{
+.body img{
 	position: absolute;
 	box-sizing: border-box;
 	top: 20px;
@@ -90,11 +83,12 @@ ol span{
 
 .body{
 	position:absolute;
+	display:block;
 	overflow: auto;
-	top: 141px;
+    top: 0;
 	left: 0;
 	width: 80vw;
-	height: 85vh;
+	height: 100vh;
 }
 
 .quests{
@@ -102,7 +96,7 @@ ol span{
 	display: inline-block;
 	background:rgba(0,0,0,.6);
 	border-radius: 25px;
-	top:0;
+    top:20vh;
 	left:50vw;
 	transform: translate(-70%, 0);
 	width: 60vw;
@@ -192,9 +186,6 @@ ul li a{
 
 @media only screen and (max-width:480px){
 
-    .header{
-    	display: none;}
-
     .right_side{
     	left:0;
     	height: 141px;
@@ -218,7 +209,17 @@ ul li a{
     }
      
     .body{
+    	top: 141px;
     	width: 100vw;
+    }
+
+    .body ol {
+    	top:-3vh;
+    	left: 15vw !important;
+    	transform: translate(-15%, 0) !important;    	
+    }
+    .body ol li{
+    	font-size: 1.6em;
     }
 
     .body .quests{
@@ -228,7 +229,7 @@ ul li a{
     }
 
     .horde_icon{
-     opacity: 0.5;   
+     opacity: 0.8;   
     }
 
     .alliance_icon{
